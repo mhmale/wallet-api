@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 5001;
 
 app.get('/api/health', (req, res) => {
     res.status(200).json({status: 'ok'});
-},
+});
 
 
 app.use('/api/transactions', transactionRoute); // Use the transaction routes)
