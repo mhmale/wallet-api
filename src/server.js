@@ -1,6 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import rateLimiter from './middleware/rateLimiter.js';
+import rateLimiter from './middleware/ratelimiter.js';
 import transactionRoute from './routes/transactionRoute.js';
 import { connectToDatabase } from './config/db.js'; // Adjust the path as necessary
 dotenv.config();
