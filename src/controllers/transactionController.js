@@ -34,7 +34,7 @@ export async function createTransaction (req, res){
 export async function deleteTransaction (req, res) {
     try {
         const { id } = req.params;
-        if (isNaNp(parseInt(id))) {
+        if (isNaN(parseInt(id))) {
             return res.status(400).json({ error: 'Transaction ID is required' });
         }
         const result = await sql`
